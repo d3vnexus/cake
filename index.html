@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bake & Bliss | Premium Custom Cakes Gampaha & Colombo</title>
+
+    <meta name="description"
+        content="Order premium custom cakes from Bake & Bliss. Specialized in Birthday, Wedding, and Anniversary cakes in Gampaha and Colombo. PickMe Flash delivery available.">
+    <meta name="keywords"
+        content="Cakes Gampaha, Custom Cakes Colombo, Wedding Cakes Sri Lanka, Bake & Bliss, Butter Cake, Chocolate Cake Delivery">
+    <link rel="icon" type="image/png" href="img/logo.png" />
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #be185d;
+            /* Pink 700 */
+            --secondary: #854d0e;
+            /* Yellow 800 */
+            --accent: #fff1f2;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        .brand-font {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+        }
+
+        html,
+        body {
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+
+        /* 4:5 Portrait Swiper */
+        .project-img {
+            aspect-ratio: 4 / 5;
+            object-fit: cover;
+            border-radius: 20px;
+            transition: transform 0.5s ease;
+        }
+
+        .project-img:hover {
+            transform: scale(1.03);
+        }
+
+        /* Video Reel Container (9:16) */
+        .reel-box {
+            aspect-ratio: 9 / 16;
+            background: #1a1a1a;
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .gradient-text {
+            background: linear-gradient(to right, #be185d, #854d0e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .floating-wa {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            transition: 0.3s;
+        }
+
+        .floating-wa:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body class="bg-[#faf9f6]">
+
+    <a href="https://wa.me/94703456448" target="_blank" class="floating-wa">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <nav class="fixed w-full z-50 glass-nav border-b border-gray-100">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex flex-col">
+                <span class="text-2xl font-bold tracking-tighter text-pink-700 brand-font leading-none">Bake &
+                    Bliss</span>
+                <span class="text-[10px] uppercase tracking-widest text-yellow-800 font-semibold">Made with love</span>
+            </div>
+            <div class="hidden lg:flex space-x-8 text-sm font-medium uppercase tracking-wide">
+                <a href="#home" class="hover:text-pink-600 transition">Home</a>
+                <a href="#about" class="hover:text-pink-600 transition">Our Story</a>
+                <a href="#services" class="hover:text-pink-600 transition">Specialities</a>
+                <a href="#projects" class="hover:text-pink-600 transition">Portfolio</a>
+                <a href="#prices" class="hover:text-pink-600 transition">Pricing</a>
+                <a href="#contact" class="hover:text-pink-600 transition">Contact</a>
+            </div>
+            <a href="tel:+94703456448"
+                class="bg-pink-700 text-white px-6 py-2 rounded-full text-sm font-semibold hover:bg-pink-800 shadow-md">Order
+                Now</a>
+        </div>
+    </nav>
+
+    <section id="home" class="relative min-h-screen flex items-center pt-20">
+        <div class="absolute inset-0 z-0">
+            <img src="img/hero.jpg" class="w-full h-full object-cover" alt="Hero Background">
+            <!-- Responsive overlay: darker on mobile, lighter on desktop -->
+            <div class="absolute inset-0 bg-black/60 md:bg-black/40"></div>
+            <!-- Optional gradient for smoother effect -->
+            <!-- <div class="absolute inset-0 bg-gradient-to-b from-black/70 md:from-black/40 via-black/20 to-black/70"></div> -->
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10 text-white">
+            <div class="max-w-3xl" data-aos="fade-up" data-aos-duration="1000">
+                <h4 class="text-yellow-400 font-semibold tracking-widest uppercase mb-4">Established in Gampaha</h4>
+                <h1 class="text-5xl md:text-8xl mb-6">Crafting Your Sweetest <span
+                        class="italic font-light">Memories</span></h1>
+                <p class="text-lg md:text-xl mb-10 opacity-90 font-light leading-relaxed">
+                    From elegant wedding tiers to playful birthday designs, we bake magic into every layer. Experience
+                    the finest cakes delivered fresh to your door across Gampaha and Colombo.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#projects"
+                        class="bg-pink-700 text-white px-10 py-4 rounded-full font-bold hover:bg-white hover:text-pink-700 transition duration-300">View
+                        Portfolio</a>
+                    <a href="#prices"
+                        class="bg-transparent border-2 border-white text-white px-10 py-4 rounded-full font-bold hover:bg-white hover:text-black transition duration-300">Our
+                        Menu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="relative" data-aos="fade-right">
+                    <img src="img/about.webp"
+                        class="rounded-3xl shadow-2xl" alt="Baking">
+                    <div class="absolute -bottom-6 -right-6 bg-yellow-800 text-white p-8 rounded-2xl hidden md:block">
+                        <p class="text-3xl font-bold italic text-center">100%</p>
+                        <p class="text-sm uppercase tracking-widest">Handmade</p>
+                    </div>
+                </div>
+                <div data-aos="fade-left">
+                    <h2 class="text-4xl md:text-5xl mb-8 leading-tight">We Don't Just Bake Cakes, <br><span
+                            class="text-pink-700">We Create Art.</span></h2>
+                    <p class="text-gray-600 mb-6 text-lg">At <strong>Bake & Bliss</strong>, our journey started with a
+                        simple passion for butter and sugar. Today, we are proud to be Gampaha's favorite destination
+                        for custom cake designs.</p>
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <h4 class="font-bold text-pink-700 mb-2 underline">Premium Quality</h4>
+                            <p class="text-sm text-gray-500">We use only the finest ingredients—pure butter, premium
+                                cocoa, and fresh fruits.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-pink-700 mb-2 underline">Timely Delivery</h4>
+                            <p class="text-sm text-gray-500">Partnered with PickMe Flash for lightning-fast delivery
+                                around Colombo.</p>
+                        </div>
+                    </div>
+                    <p class="italic text-gray-700 border-l-4 border-yellow-800 pl-4">"Every celebration is unique, and
+                        we believe the cake should be too."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 bg-stone-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl mb-4">Cakes for Every Milestone</h2>
+                <div class="h-1 w-20 bg-pink-700 mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 text-center">
+                <div class="bg-white p-6 rounded-2xl hover:shadow-lg transition">
+                    <i class="fas fa-ring text-3xl text-yellow-700 mb-4"></i>
+                    <h5 class="font-bold">Weddings</h5>
+                </div>
+                <div class="bg-white p-6 rounded-2xl hover:shadow-lg transition">
+                    <i class="fas fa-birthday-cake text-3xl text-pink-600 mb-4"></i>
+                    <h5 class="font-bold">Birthdays</h5>
+                </div>
+                <div class="bg-white p-6 rounded-2xl hover:shadow-lg transition">
+                    <i class="fas fa-heart text-3xl text-red-500 mb-4"></i>
+                    <h5 class="font-bold">Anniversary</h5>
+                </div>
+                <div class="bg-white p-6 rounded-2xl hover:shadow-lg transition">
+                    <i class="fas fa-baby text-3xl text-blue-400 mb-4"></i>
+                    <h5 class="font-bold">Baby Shower</h5>
+                </div>
+                <div class="bg-white p-6 rounded-2xl hover:shadow-lg transition">
+                    <i class="fas fa-graduation-cap text-3xl text-gray-700 mb-4"></i>
+                    <h5 class="font-bold">Promotions</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 bg-white overflow-hidden">
+        <div class="container mx-auto px-6 mb-12 flex justify-between items-end">
+            <div>
+                <h2 class="text-4xl">Our Recent Masterpieces</h2>
+                <p class="text-gray-500 mt-2">Swipe to explore our latest custom designs</p>
+            </div>
+            <div class="hidden md:block">
+                <span class="text-pink-700 font-bold uppercase tracking-widest text-xs">Portfolio 2024</span>
+            </div>
+        </div>
+
+        <div class="swiper projectSwiper px-6">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide px-2">
+                    <img src="img/1.jpeg" class="project-img" alt="Wedding Cake">
+                    <!-- <h4 class="mt-4 font-bold text-lg">Floral Elegance</h4> -->
+                </div>
+                <div class="swiper-slide px-2">
+                    <img src="img/2.jpeg" class="project-img" alt="Birthday Cake">
+                    <!-- <h4 class="mt-4 font-bold text-lg">Royal Chocolate</h4> -->
+                </div>
+                <div class="swiper-slide px-2">
+                    <img src="img/3.jpeg" class="project-img" alt="Anniversary">
+                    <!-- <h4 class="mt-4 font-bold text-lg">Pastel Perfection</h4> -->
+                </div>
+                <div class="swiper-slide px-2">
+                    <img src="img/4.jpeg" class="project-img" alt="Cupcakes">
+                    <!-- <h4 class="mt-4 font-bold text-lg">Velvet Cupcakes</h4> -->
+                </div>
+                <div class="swiper-slide px-2">
+                    <img src="img/5.jpeg" class="project-img" alt="Christmas">
+                    <!-- <h4 class="mt-4 font-bold text-lg">Holiday Special</h4> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-pink-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl mb-4 italic">Baking in Motion</h2>
+                <p class="text-gray-600">Watch our TikTok & Facebook process videos</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <!-- Video 1 -->
+                <div class="reel-box shadow-xl group relative cursor-pointer">
+                    <video class="w-full h-full object-cover rounded-lg" src="videos/1.mp4" muted
+                        preload="metadata"></video>
+                    <div
+                        class="absolute inset-0 flex items-center justify-center text-white text-5xl pointer-events-none">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="reel-box shadow-xl group relative cursor-pointer">
+                    <video class="w-full h-full object-cover rounded-lg" src="videos/2.mp4" muted
+                        preload="metadata"></video>
+                    <div
+                        class="absolute inset-0 flex items-center justify-center text-white text-5xl pointer-events-none">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+
+                <!-- Video 3 -->
+                <div class="reel-box shadow-xl group relative cursor-pointer">
+                    <video class="w-full h-full object-cover rounded-lg" src="videos/3.mp4" muted
+                        preload="metadata"></video>
+                    <div
+                        class="absolute inset-0 flex items-center justify-center text-white text-5xl pointer-events-none">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+
+                <!-- Video 4 -->
+                <!-- <div class="reel-box shadow-xl group relative cursor-pointer">
+                    <video class="w-full h-full object-cover rounded-lg" src="videos/other.mp4" muted
+                        preload="metadata"></video>
+                    <div
+                        class="absolute inset-0 flex items-center justify-center text-white text-5xl pointer-events-none">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Grab all videos
+        const videos = document.querySelectorAll('video');
+
+        // Function to pause all except current
+        function pauseOthers(current) {
+            videos.forEach(v => {
+                if (v !== current) {
+                    v.pause();
+                }
+            });
+        }
+
+        // Play video on click
+        document.querySelectorAll('.reel-box').forEach(box => {
+            box.addEventListener('click', () => {
+                const vid = box.querySelector('video');
+                if (vid.paused) {
+                    pauseOthers(vid);
+                    vid.play();
+                    box.querySelector('i').style.display = 'none'; // hide play icon
+                } else {
+                    vid.pause();
+                    box.querySelector('i').style.display = 'flex';
+                }
+            });
+        });
+
+        // Optional: pause video when scrolled out of view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                const vid = entry.target;
+                if (!entry.isIntersecting) {
+                    vid.pause();
+                    vid.parentElement.querySelector('i').style.display = 'flex';
+                }
+            });
+        }, { threshold: 0.5 });
+
+        videos.forEach(v => observer.observe(v));
+    </script>
+
+
+    <section id="prices" class="py-24 container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl mb-4 uppercase tracking-tighter">Our Price Guide</h2>
+            <p class="text-gray-500 italic">Starting prices for 1kg cakes & sets</p>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-0 border border-gray-100 rounded-[40px] overflow-hidden shadow-2xl">
+            <div class="p-12 bg-white border-r border-gray-100">
+                <h3 class="text-2xl font-bold mb-8 text-pink-700">Signature Cakes</h3>
+                <div class="space-y-6">
+                    <div class="flex justify-between border-b pb-2">
+                        <span>Butter Cake</span>
+                        <span class="font-bold">1400 LKR</span>
+                    </div>
+                    <div class="flex justify-between border-b pb-2">
+                        <span>Chocolate Cake</span>
+                        <span class="font-bold">1800 LKR</span>
+                    </div>
+                    <div class="flex justify-between border-b pb-2">
+                        <span>Ribbon Cake</span>
+                        <span class="font-bold">1800 LKR</span>
+                    </div>
+                    <div class="flex justify-between border-b pb-2">
+                        <span>Fruit Cake</span>
+                        <span class="font-bold">1600 LKR</span>
+                    </div>
+                </div>
+            </div>
+            <div class="p-12 bg-pink-700 text-white">
+                <h3 class="text-2xl font-bold mb-8">Premium Selection</h3>
+                <div class="space-y-6">
+                    <div class="flex justify-between border-b border-pink-400 pb-2">
+                        <span>Pineapple Gateau</span>
+                        <span class="font-bold">2200 LKR</span>
+                    </div>
+                    <div class="flex justify-between border-b border-pink-400 pb-2">
+                        <span>Christmas (6pcs)</span>
+                        <span class="font-bold">1500 LKR</span>
+                    </div>
+                    <div class="flex justify-between border-b border-pink-400 pb-2">
+                        <span>Cupcakes (6pcs)</span>
+                        <span class="font-bold">600 LKR</span>
+                    </div>
+                    <div class="flex justify-between border-b border-pink-400 pb-2">
+                        <span>Custom Cupcakes (6pcs)</span>
+                        <span class="font-bold">1500 LKR</span>
+                    </div>
+                </div>
+                <p class="mt-8 text-xs opacity-70 leading-relaxed">*Prices are subject to change based on custom
+                    decorations and weight.</p>
+            </div>
+            <div class="p-12 bg-white">
+                <h3 class="text-2xl font-bold mb-8 text-yellow-800">Custom Events</h3>
+                <p class="text-gray-600 mb-6">We provide fully customized themes for:</p>
+                <ul class="text-sm space-y-3 mb-8">
+                    <li><i class="fas fa-check text-green-500 mr-2"></i> Bride / Mom to Be</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i> Engagement / Homecoming</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i> Gender Reveal (Boy or Girl)</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i> Retirement & Promotions</li>
+                </ul>
+                <a href="https://wa.me/94703456448"
+                    class="block text-center bg-yellow-800 text-white py-3 rounded-lg font-bold">Get a Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-stone-100">
+        <div class="container mx-auto px-6">
+            <div class="swiper reviewSwiper">
+                <div class="swiper-wrapper text-center">
+                    <div class="swiper-slide px-10">
+                        <i class="fas fa-quote-left text-4xl text-pink-200 mb-6"></i>
+                        <p class="text-2xl italic mb-6 leading-relaxed">"The Chocolate cake from Bake & Bliss was beyond
+                            amazing. My daughter's birthday was perfect because of the beautiful custom design!"</p>
+                        <h5 class="font-bold text-pink-700">- Nilanthi Perera, Colombo</h5>
+                    </div>
+                    <div class="swiper-slide px-10">
+                        <i class="fas fa-quote-left text-4xl text-pink-200 mb-6"></i>
+                        <p class="text-2xl italic mb-6 leading-relaxed">"Reliable delivery and the best ribbon cake I've
+                            tasted in Sri Lanka. Truly artisanal work."</p>
+                        <h5 class="font-bold text-pink-700">- Kavindu, Gampaha</h5>
+                    </div>
+                </div>
+                <div class="swiper-pagination mt-10"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="bg-white rounded-[40px] shadow-2xl overflow-hidden flex flex-wrap">
+                <div class="w-full lg:w-1/2 p-12 lg:p-20">
+                    <h2 class="text-4xl mb-6">Let's Talk Cakes!</h2>
+                    <p class="text-gray-500 mb-10">Fill out the form or reach us directly via WhatsApp to discuss your
+                        theme and delivery date.</p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <div
+                                class="w-12 h-12 bg-pink-50 rounded-full flex items-center justify-center text-pink-700">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <span class="font-semibold">+94 70 345 6448</span>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div
+                                class="w-12 h-12 bg-pink-50 rounded-full flex items-center justify-center text-pink-700">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <span class="font-semibold">Gampaha, Sri Lanka</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 bg-gray-50 p-12 lg:p-20">
+                    <form id="whatsappForm" class="space-y-6">
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <input type="text" id="name" placeholder="Full Name"
+                                class="w-full bg-white border border-gray-200 p-4 rounded-xl focus:ring-2 focus:ring-pink-500 outline-none">
+
+                            <input type="text" id="phone" placeholder="Contact Number"
+                                class="w-full bg-white border border-gray-200 p-4 rounded-xl focus:ring-2 focus:ring-pink-500 outline-none">
+
+                        </div>
+                        <select id="cakeType"
+                            class="w-full bg-white border border-gray-200 p-4 rounded-xl focus:ring-2 focus:ring-pink-500 outline-none">
+                            <option>Wedding Cake</option>
+                            <option>Birthday Cake</option>
+                            <option>Anniversary Cake</option>
+                            <option>Custom Cupcakes</option>
+                        </select>
+
+                        <textarea id="message" placeholder="Tell us your theme, weight and event date..."
+                            class="w-full bg-white border border-gray-200 p-4 rounded-xl h-40 focus:ring-2 focus:ring-pink-500 outline-none"></textarea>
+
+                        <button type="submit"
+                            class="w-full bg-pink-700 text-white font-bold py-4 rounded-xl shadow-lg hover:bg-pink-800 transition transform hover:-translate-y-1">
+                            Submit Inquiry
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-16">
+        <div class="container mx-auto px-6 grid md:grid-cols-4 gap-12">
+            <div class="col-span-1 md:col-span-2">
+                <h2 class="text-3xl text-white brand-font font-bold mb-6">Bake & Bliss</h2>
+                <p class="max-w-sm mb-6 leading-relaxed">Sri Lanka's premier custom cake boutique. We bring your
+                    imagination to life through taste and design. Professional service, premium quality.</p>
+                <div class="flex space-x-4">
+                    <a href="https://web.facebook.com/profile.php?id=61585637641307"
+                        class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-600 hover:text-white transition"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="#"
+                        class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-400 hover:text-white transition"><i
+                            class="fab fa-tiktok"></i></a>
+                    <a href="#"
+                        class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-500 hover:text-white transition"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-6 uppercase tracking-widest text-sm">Quick Links</h4>
+                <ul class="space-y-4">
+                    <li><a href="#about" class="hover:text-pink-500 transition">Our Story</a></li>
+                    <li><a href="#projects" class="hover:text-pink-500 transition">Recent Work</a></li>
+                    <li><a href="#prices" class="hover:text-pink-500 transition">Price List</a></li>
+                    <li><a href="#contact" class="hover:text-pink-500 transition">Book Now</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-6 uppercase tracking-widest text-sm">Operating Area</h4>
+                <p class="text-sm leading-loose">Gampaha Main Outlet<br>Colombo (PickMe Flash Delivery)<br>Gampola &
+                    Surrounding Areas</p>
+                <p class="mt-4 text-xs font-bold text-yellow-600">Mon - Sun: 8:00 AM - 9:00 PM</p>
+            </div>
+        </div>
+        <div class="container mx-auto px-6 mt-16 pt-8 border-t border-gray-800 text-center text-xs">
+            &copy; 2024 Bake & Bliss Cakes Sri Lanka. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        // Projects Slider
+        new Swiper(".projectSwiper", {
+            slidesPerView: 1.2,
+            spaceBetween: 20,
+            loop: true,
+            autoplay: { delay: 3000 },
+            breakpoints: {
+                640: { slidesPerView: 2 },
+                1024: { slidesPerView: 4 }
+            }
+        });
+
+        // Testimonial Slider
+        new Swiper(".reviewSwiper", {
+            loop: true,
+            autoplay: { delay: 5000 },
+            pagination: { el: ".swiper-pagination", clickable: true },
+        });
+    </script>
+    <script>
+        document.getElementById("whatsappForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const name = document.getElementById("name").value.trim();
+            const phone = document.getElementById("phone").value.trim();
+            const cakeType = document.getElementById("cakeType").value;
+            const message = document.getElementById("message").value.trim();
+
+            if (!name || !phone || !message) {
+                alert("Please fill all fields");
+                return;
+            }
+
+            const whatsappNumber = "94703456448";
+
+            // Use %0A for line breaks instead of \n
+            let whatsappMessage =
+                "New Cake Inquiry %0A%0A" +
+                "Name: " + encodeURIComponent(name) + "%0A" +
+                "Contact: " + encodeURIComponent(phone) + "%0A" +
+                "Cake Type: " + encodeURIComponent(cakeType) + "%0A%0A" +
+                "Details:%0A" + encodeURIComponent(message) + "%0A%0A" +
+                "Sent from Bake & Bliss Website";
+
+            const whatsappURL = "https://wa.me/" + whatsappNumber + "?text=" + whatsappMessage;
+
+            window.open(whatsappURL, "_blank");
+        });
+    </script>
+
+</body>
+
+</html>
